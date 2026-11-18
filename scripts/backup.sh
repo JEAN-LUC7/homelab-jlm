@@ -10,5 +10,5 @@ if [ ! -f "$DISQUE/.disque_ok" ]; then
   exit 1
 fi
 
-restic backup "$HOME/homelab" "$HOME/test-data"
+restic backup "$HOME/homelab-jlm" "$HOME/test-data"
 restic forget --keep-daily 7 --keep-weekly 4 --keep-monthly 6 --prune
